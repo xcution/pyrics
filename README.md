@@ -5,6 +5,9 @@ It was written using the Linux's dbus, but it should be easy to port to another 
 
 I wrote it because some music players I use lack the ability to display the song's lyrics, or when they do, they don't have good lyrics sources. So now I can have lyrics for any player I might be using.
 
+# Usage
+Clone this repo, install the missing dependencies and run `pyrics.py` to display the lyrics on the terminal or `qpyrics.py` for a QT interface.
+
 # Dependencies
 Pyrics depends on:
 - psutil
