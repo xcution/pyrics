@@ -27,7 +27,8 @@ class LoadLyricsWorker(QThread):
 
     def run(self):
         lyrics = self.load_lyrics()
-        self.trigger.emit(lyrics)
+        if lyrics:
+            self.trigger.emit(lyrics)
 
     def load_lyrics(self):
         if self.backend_index != 0:
@@ -131,7 +132,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                     action.setChecked(True)
 
 
-app = QApplication([])
+app = QApplication(sys.argv)
 w = MainWindow()
 w.show()
 sys.exit(app.exec_())

@@ -8,6 +8,7 @@ I wrote it because some music players I use lack the ability to display the song
 # Dependencies
 Pyrics depends on:
 - psutil
+- html2text
 - beautiful soup 4
 - pyqt5 (for QT GUI)
 You can install all of them running `pip3 install -r requirements.txt`
